@@ -1,127 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/negro"
     android:visibility="visible"
     tools:context=".MainActivity"
-    tools:visibility="visible"
-    tools:ignore="ExtraText">
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="54dp"
-        android:layout_height="26dp"
-        android:id2="@+id/foto"
-        android:src="@drawable/Icono_flecha_blanco_noticias"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="690dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="54dp"
-        android:layout_height="26dp"
-        android:id2="@+id/foto"
-        android:src="@drawable/Icono_flecha_blanco_noticias"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="628dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="54dp"
-        android:layout_height="26dp"
-        android:id2="@+id/foto"
-        android:src="@drawable/Icono_flecha_blanco_noticias"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="571dp" />
+    tools:ignore="ExtraText"
+    tools:visibility="visible">
 
     <ImageView
         android:id="@+id/foto"
-        android:layout_width="351dp"
-        android:layout_height="276dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/audi_mexico"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-    <ImageView
-        android:layout_width="54dp"
-        android:layout_height="26dp"
-        android:id1="@+id/foto"
-        android:src="@drawable/Icono_flecha_blanco_conocenos"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="509dp" />
-
-    <ImageView
-        android:layout_width="54dp"
-        android:layout_height="26dp"
-        android:id2="@+id/foto"
-        android:src="@drawable/Icono_flecha_blanco_noticias"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="304dp"
-        tools:layout_editor_absoluteY="509dp" />
-
-    <Button
-        android:id="@+id/btnnoticias"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:background="@color/negro"
-        android:text="Noticias"
-        android:textColor="@color/blanco"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
-
-    <Button
-        android:id="@+id/btnbolsa_de_trabajo"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:background="@color/negro"
-        android:text="   Bolsa de trabajo"
-        android:textColor="@color/blanco"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.84" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/btnconocenos"
-        android:layout_width="110dp"
-        android:layout_height="60dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:background="@color/negro"
         android:text="Conócenos"
+        android:textAlignment="textEnd"
         android:textColor="@color/blanco"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/foto"
+        app:layout_constraintVertical_bias="0.657" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icono_flecha_blanco"
+        app:layout_constraintBottom_toBottomOf="@+id/btnbolsa_de_trabajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/btnbolsa_de_trabajo"
+        app:layout_constraintTop_toTopOf="@+id/btnbolsa_de_trabajo"
+        app:layout_constraintVertical_bias="0.478"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icono_flecha_blanco"
+        app:layout_constraintBottom_toBottomOf="@+id/btnsoporte_tecnico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/btnsoporte_tecnico"
+        app:layout_constraintTop_toTopOf="@+id/btnsoporte_tecnico"
+        app:layout_constraintVertical_bias="0.434"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icono_flecha_blanco"
+        app:layout_constraintBottom_toBottomOf="@+id/btnnoticias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/btnnoticias"
+        app:layout_constraintTop_toTopOf="@+id/btnnoticias"
+        app:layout_constraintVertical_bias="0.422"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icono_flecha_blanco"
+        app:layout_constraintBottom_toBottomOf="@+id/btnconocenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/btnconocenos"
+        app:layout_constraintTop_toTopOf="@+id/btnconocenos"
+        app:layout_constraintVertical_bias="0.478"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnnoticias"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/negro"
+        android:text="Noticias"
+        android:textAlignment="textEnd"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674" />
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/btnbolsa_de_trabajo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/negro"
+        android:text="   Bolsa de trabajo"
+        android:textAlignment="textEnd"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.821" />
 
     <Button
         android:id="@+id/btnsoporte_tecnico"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:background="@color/negro"
         android:text="   Soporte técnico"
+        android:textAlignment="textEnd"
         android:textColor="@color/blanco"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
+        app:layout_constraintVertical_bias="0.903" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

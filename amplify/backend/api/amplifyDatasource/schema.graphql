@@ -1,10 +1,8 @@
-type Task @model {
+type User @model {
   id: ID!
-  title: String!
-  description: String
-  status: String
-}
-type Note @model {
-  id: ID!
-  content: String!
+  name: String!
+  email: String!
+  phonenumber: String!
+  applications: [String]
+  wish_list: [String]
 }

@@ -1,11 +1,10 @@
 package com.example.audimexico;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        btn_conocenos= (Button) findViewById(R.id.btnconocenos);
-        btn_noticias=(Button) findViewById(R.id.btnnoticias);
-        btn_bolsa_de_trabajo=(Button) findViewById(R.id.btnbolsa_de_trabajo);
-        btn_soporte_tecnico=(Button) findViewById(R.id.btnsoporte_tecnico);
+        btn_conocenos = findViewById(R.id.btnconocenos);
+        btn_noticias = findViewById(R.id.btnnoticias);
+        btn_bolsa_de_trabajo = findViewById(R.id.btnbolsa_de_trabajo);
+        btn_soporte_tecnico = findViewById(R.id.btnsoporte_tecnico);
 
         btn_conocenos.setOnClickListener(new View.OnClickListener() {
             @Override
