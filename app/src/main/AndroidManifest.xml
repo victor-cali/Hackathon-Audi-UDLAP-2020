@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Exito"></activity>
+        <activity android:name=".PrincipalOperativo"></activity>
+        <activity android:name=".ProfesionistasRequisitos" />
+        <activity android:name=".ProfesionistasPuestos" />
+        <activity android:name=".PrincipalProfesionistas" />
+        <activity android:name=".Exito" />
         <activity android:name=".FuturoEmpleo" />
         <activity android:name=".Login" />
         <activity android:name=".Registro" />
