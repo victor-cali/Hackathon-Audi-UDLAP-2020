@@ -1,3 +1,57 @@
 <resources>
+    //Main menu
     <string name="app_name">Audi Mexico</string>
+    <string name="cono">Conócenos </string>
+    <string name="not">Noticias  </string>
+    <string name="bota">Bolsa de trabajo </string>
+    <string name="st">Soporte técnico </string>
+
+    //Conócenos
+
+    //Noticias
+
+    //Bolsa de trabajo
+    <string name="id">¿Ya tienes tu cuenta Audi? </string>
+    <string name="is">Iniciar sesión </string>
+    <string name="o">O </string>
+    <string name="registro">Regístrate </string>
+    <string name="une">y únete a nosotros! </string>
+    <string name="aplicar">Con el registro podrás aplicar a nuestras vacantes </string>
+    <string name="carrera">Tu carrera comienza en  </string>
+    <string name="am">Audi México  </string>
+    <string name="profe">Profesionistas  </string>
+    <string name="po">Personal operativo  </string>
+    <string name="ct">Carreras técnicas  </string>
+    <string name="uni">Universitarios   </string>
+
+    //Iniciar sesión
+    <string name="mail">E-mail   </string>
+    <string name="pass">Contraseña  </string>
+    <string name="login">Entrar  </string>
+
+    //Registrate
+    <string name="name">Nombre  </string>
+    <string name="lastn">Apellidos  </string>
+    <string name="él">Hombre(él)</string>
+    <string name="ella">Mujer(ella)</string>
+    <string name="elle">Neutro(elle)</string>
+    <string name="pedirmail">E-mail  </string>
+    <string name="repetirmail">Repetir e-mail  </string>
+    <string name="residencia">País de residencia  </string>
+    <string name="tel">Teléfono </string>
+    <string name="tel2">Teléfono </string>
+    <string name="curp">CURP </string>
+    <string name="secu">Secundaria </string>
+    <string name="prepa">Preparatoria </string>
+    <string name="licencia">Licenciatura sí aplica </string>
+
+    //Registro completado
+    <string name="completo">Tu cuenta se ha registrado con éxito. </string>
+    <string name="verficar">Favor de verificar tu e-mail en el </string>
+    <string name="mandado">correo que te acabamos de mandar. </string>
+    <string name="unavez">Una vez  verificado </string>
+    <string name="icuenta">ingresa a tu cuenta </string>
+    <string name="ii">Iniciar sesión </string>
+
+    //Soporte técnico
 </resources>
