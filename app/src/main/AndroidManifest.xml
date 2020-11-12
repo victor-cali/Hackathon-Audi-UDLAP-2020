@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Exito"></activity>
+        <activity android:name=".FuturoEmpleo" />
+        <activity android:name=".Login" />
+        <activity android:name=".Registro" />
+        <activity
+            android:name=".Bolsa"
+            android:label="@string/title_activity_bolsa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Bolsa_de_trabajo" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

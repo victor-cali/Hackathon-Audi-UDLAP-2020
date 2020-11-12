@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones2">
+        <item> Administración </item>
+        <item> Calidad </item>
+        <item> Comunicación</item>
+        <item> Desarollo Técnico </item>
+
+    </string-array>
+
+
+</resources>

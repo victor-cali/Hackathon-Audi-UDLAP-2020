@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones1">
+        <item> Persona de confianza </item>
+        <item> Programa de Carrera Dual </item>
+        <item> Programa de especialistas</item>
+        <item> Programa de Practicantes </item>
+        <item> Programa EMA </item>
+
+    </string-array>
+
+
+</resources>
