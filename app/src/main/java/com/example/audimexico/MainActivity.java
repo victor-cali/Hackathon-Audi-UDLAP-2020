@@ -1,10 +1,13 @@
 package com.example.audimexico;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.amplifyframework.core.Amplify;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Amplify.Auth.fetchAuthSession(
+                result -> Log.i("AmplifyQuickstart", result.toString()),
+                error -> Log.e("AmplifyQuickstart", error.toString())
+        );
+
         btn_conocenos = findViewById(R.id.btnconocenos);
         btn_noticias = findViewById(R.id.btnnoticias);
         btn_bolsa_de_trabajo = findViewById(R.id.btnbolsa_de_trabajo);
@@ -23,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         btn_conocenos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
 
