@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrincipalOperativo"></activity>
+        <activity android:name=".PrincipalPracticantes"></activity>
+        <activity android:name=".DocumentosOperativo" />
+        <activity android:name=".RequisitosOperativo" />
+        <activity android:name=".ProcesoSeleccionOperativo" />
+        <activity android:name=".PrincipalOperativo" />
         <activity android:name=".ProfesionistasRequisitos" />
         <activity android:name=".ProfesionistasPuestos" />
         <activity android:name=".PrincipalProfesionistas" />
