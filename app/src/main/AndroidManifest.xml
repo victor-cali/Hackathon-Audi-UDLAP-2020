@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PracticantesRequisitos"></activity>
+        <activity android:name=".EmaRequisitos"></activity>
+        <activity android:name=".Practicantes" />
+        <activity android:name=".Dual" />
+        <activity android:name=".Ema" />
+        <activity android:name=".CarreraRequisitos" />
+        <activity android:name=".ProcesoSeleccion" />
+        <activity android:name=".PrincipalTecnicas" />
+        <activity android:name=".DocumentosPracticantes" />
+        <activity android:name=".PracticantesRequisitos" />
         <activity android:name=".PrincipalPracticantes" />
         <activity android:name=".DocumentosOperativo" />
         <activity android:name=".RequisitosOperativo" />
