@@ -143,6 +143,18 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="message_login1">¿Ya tienes una cuenta?</string>
+    <string name="btn_login">Inicia Sesión</string>
+    <string name="btn_signup">Registrate</string>
+    <string name="message_login2">y unéte a nosotros!</string>
+    <string name="descrip_homebtn">home button</string>
+    <string name="btn_professionals">Profesionistas</string>
+    <string name="message_or">O</string>
+    <string name="btn_operationalstaff">Personal Operativo</string>
+    <string name="btn_aboutus">Conócenos</string>
+    <string name="btn_news">Noticias</string>
+    <string name="btn_jobs">Bolsa de trabajo</string>
+    <string name="btn_support">Soporte técnico</string>
 
     //Soporte técnico
 </resources>

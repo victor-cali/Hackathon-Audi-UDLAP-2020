@@ -1,9 +1,12 @@
 package com.example.audimexico;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,36 +26,27 @@ public class MainActivity extends AppCompatActivity {
                 error -> Log.e("AmplifyQuickstart", error.toString())
         );
 
-        btn_conocenos = findViewById(R.id.btnconocenos);
-        btn_noticias = findViewById(R.id.btnnoticias);
-        btn_bolsa_de_trabajo = findViewById(R.id.btnbolsa_de_trabajo);
-        btn_soporte_tecnico = findViewById(R.id.btnsoporte_tecnico);
+        btn_conocenos = findViewById(R.id.btn_conocenos);
+        btn_noticias = findViewById(R.id.btn_noticias);
+        btn_bolsa_de_trabajo = findViewById(R.id.btn_bolsa_de_trabajo);
+        btn_soporte_tecnico = findViewById(R.id.btn_soporte_tecnico);
+    }
 
-        btn_conocenos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
-        });
-
-        btn_noticias.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        btn_bolsa_de_trabajo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        btn_soporte_tecnico.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+    public void onClick(View view) {
+        Intent btn_intent = null;
+        switch (view.getId()) {
+            case R.id.btn_login:
+                btn_intent = new Intent(MainActivity.this, Login.class);
+                break;
+            case R.id.btn_bolsa_de_trabajo:
+                btn_intent = new Intent(MainActivity.this, Bolsa.class);
+                break;
+            default:
+                Context context = getApplicationContext();
+                CharSequence text = "Aún no disponible";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+        }
     }
 }
