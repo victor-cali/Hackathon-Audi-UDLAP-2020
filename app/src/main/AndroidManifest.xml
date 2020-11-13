@@ -21,6 +21,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".Bolsa" />
+        <activity android:name=".Dual" />
+        <activity android:name=".Login" />
+        <activity android:name=".CarreraRequisitos" />
+        <activity android:name=".DocumentosOperativo" />
+        <activity android:name=".FuturoEmpleo" />
+        <activity android:name=".Practicantes" />
+        <activity android:name=".PrincipalTecnicas" />
+        <activity android:name=".Registro" />
+        <activity android:name=".RequisitosOperativo" />
+        <activity android:name=".ProfesionistasRequisitos" />
     </application>
 
 </manifest>

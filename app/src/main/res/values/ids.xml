@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="button22" type="id">22</item>
-    <item name="button23" type="id">23</item>
-    <item name="button24" type="id">24</item>
-    <item name="button25" type="id">25</item>
-    <item name="button26" type="id">26</item>
-    <item name="button27" type="id">27</item>
-    <item name="button28" type="id">28</item>
+    <item name="button22" type="id" />
+    <item name="button23" type="id" />
+    <item name="button24" type="id" />
+    <item name="button25" type="id" />
+    <item name="button26" type="id" />
+    <item name="button27" type="id" />
+    <item name="button28" type="id" />
 </resources>

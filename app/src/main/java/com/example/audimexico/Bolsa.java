@@ -16,7 +16,6 @@ public class Bolsa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bolsa);
-
         btn_button = findViewById(R.id.button);
         btn_button2 = findViewById(R.id.button2);
         btn_button3 = findViewById(R.id.button3);

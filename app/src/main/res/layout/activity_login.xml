@@ -48,13 +48,45 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
+        android:backgroundTint="@color/negro"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="Entrar"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9"
         app:layout_constraintVertical_bias="0.337" />
+
+    <Button
+        android:id="@+id/button62"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gris_claro"
+        android:onClick="onClick"
+        android:text="Volver"
+        android:textColor="@color/negro"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/btn_home"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="265dp"
+        android:layout_height="98dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

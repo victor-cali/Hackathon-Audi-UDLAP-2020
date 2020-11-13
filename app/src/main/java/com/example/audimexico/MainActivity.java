@@ -20,12 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Amplify.Auth.fetchAuthSession(
                 result -> Log.i("AmplifyQuickstart", result.toString()),
                 error -> Log.e("AmplifyQuickstart", error.toString())
         );
-
         btn_conocenos = findViewById(R.id.btn_conocenos);
         btn_noticias = findViewById(R.id.btn_noticias);
         btn_bolsa_de_trabajo = findViewById(R.id.btn_bolsa_de_trabajo);
@@ -37,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btn_login:
                 btn_intent = new Intent(MainActivity.this, Login.class);
+                startActivity(btn_intent);
                 break;
             case R.id.btn_bolsa_de_trabajo:
                 btn_intent = new Intent(MainActivity.this, Bolsa.class);
+                startActivity(btn_intent);
                 break;
             default:
                 Context context = getApplicationContext();
@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+                break;
         }
+
     }
 }

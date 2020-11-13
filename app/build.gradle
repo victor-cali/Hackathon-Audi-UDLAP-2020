@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.audimexico"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -45,4 +45,12 @@ dependencies {
 
     // Support for Java 8 features
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.0.10'
+
+    //For AWSMobileClient only:
+    implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.13.+'
+    // Cognito UserPools for SignIn
+    implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.13.+'
+    //For the drop-in UI also:
+    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'
+
 }
